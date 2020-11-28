@@ -15,4 +15,3 @@ echo $url2;
 header("Location: $url2");
 exit();
 ?>
-Hi
