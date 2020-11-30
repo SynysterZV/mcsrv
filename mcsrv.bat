@@ -1,6 +1,6 @@
 @echo OFF
-echo Creating Minecraft Server File
 IF NOT EXIST ./mcsrv (mkdir mcsrv && cd mcsrv) ELSE goto :run2
+echo Creating Minecraft Server File
 echo Getting Latest Java Version
 curl https://ghf.synyster.org/php/ && echo .
 curl -L -o server.jar https://ghf.synyster.org/php/
@@ -23,4 +23,5 @@ if %run% EQU Y (clear && echo Starting Server && run.bat)
 if %run% EQU N exit
 
 :run2
+echo Starting Minecraft Server...
 cd mcsrv && run.bat
